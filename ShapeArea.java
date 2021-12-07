@@ -49,8 +49,8 @@ public class ShapeArea {
         }while (choice != 4);
     }
     
-    public static double computeTriangleArea(int b, int h) {
-        double areaTri = 0.5 * b * h;
+    public static double computeTriangleArea(int base, int height) {
+        double areaTri = 0.5 * base * height;
         
         return areaTri;
     }
