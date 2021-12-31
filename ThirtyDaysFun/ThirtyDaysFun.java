@@ -1,3 +1,5 @@
+package ThirtyDaysFun;
+
 import java.util.Scanner;
 
 /**
@@ -5,11 +7,11 @@ import java.util.Scanner;
 */
 public class ThirtyDaysFun{
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        
-        System.out.print("Which month? (1-12) ");
-        int month = s.nextInt();
-        System.out.println(monthDays(month) + " days hath " + monthName(month));
+        try (Scanner s = new Scanner(System.in)) {
+            System.out.print("Which month? (1-12) ");
+            int month = s.nextInt();
+            System.out.println(monthDays(month) + " days hath " + monthName(month));
+        }
     }
     /**
     * Returns name of the given month 1 -12
