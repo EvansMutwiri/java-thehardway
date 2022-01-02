@@ -21,12 +21,16 @@ public class ArrayLinearSearch {
             System.out.println("Which order to find: ");
             try {
                 toFind = s.nextInt();
+                boolean found = false;
                 for ( int order : orderNumbers) {
-                    boolean found = order == toFind;
-                    if (found) {
-                        System.out.println( "Order number: " + order + " found");
+                    
+                    if (order == toFind) {
+                        found = true;
+                        System.out.println( "Order number: " + order + " found.");
                     }
                 }
+                if (found == false )
+                    System.out.println("Order number: " + toFind + " not found.");
 
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input -- must be a number");
