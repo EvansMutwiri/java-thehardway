@@ -12,23 +12,24 @@ public class ItemNotFound {
             System.out.println("Name one greek mythology hero: ");
             try {
                 String guess = s.nextLine();
-                boolean found = false;
+                // boolean found = false;
+                int count = 0;
 
                 for (String hero : heroes) {
                     if (guess.equals(hero)) {
                         System.out.println("You guesed right! " + guess +" is a Greek Hero.");
-                        found = true;
+                        // found = true;
+                        count += 1;
                     }
                 }
 
-                if (found == false)
+                if (count == 0)
+                // if (found == false)
                     System.out.println("No, " + guess + " is not a greek hero");
             } catch (Exception e) {
                 System.out.println(e);
             }
 
-        } catch (Exception e) {
-            //TODO: handle exception
         }
     }
 }
