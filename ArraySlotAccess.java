@@ -1,9 +1,7 @@
-import java.util.Random;
-
 public class ArraySlotAccess {
     public static void main(String[] args) {
 
-        int[] arr = new int[3];
+        int[] arr = new int[6];
 
         //for loop to access each slot of the array
         // for (int i = 0; i < arr.length; i++) {
